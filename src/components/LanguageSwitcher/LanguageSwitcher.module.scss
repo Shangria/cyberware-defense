@@ -1,0 +1,72 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 113px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 3px 10px;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  background: none;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+}
+
+.languageText {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.menu li {
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown:hover .menu {
+  display: block;
+}
