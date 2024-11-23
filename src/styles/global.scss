@@ -30,4 +30,11 @@ main {
   flex: 1;
 }
 
+.main-btn{
+  background: var(--color-orange);
+  &:hover {
+    background: var(--color-pastel-orange);
+  }
+}
+
 

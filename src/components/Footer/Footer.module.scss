@@ -14,10 +14,18 @@
 
 .logosBox {
   border-right: 1px solid var(--color-white);
-  margin-right: 140px;
+  margin-right: 20px;
   width: 25%;
   max-width: 290px;
   padding-right: 20px;
+
+  @media (min-width: 1024px)  {
+    margin-right: 40px;
+  }
+
+  @media (min-width: 1440px)  {
+    margin-right: 120px;
+  }
 }
 
 .logosContainer {
@@ -39,12 +47,22 @@
 .mainBox {
   width: 75%;
   display: flex;
-  gap: 150px;
+  justify-content: flex-end;
+
+
+  @media (min-width: 1024px)  {
+    gap: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    gap: 130px;
+  }
 }
 
 .linksWrap {
   display: flex;
   gap: 25px;
+  width: 40%;
 }
 
 .linksBox {
@@ -52,15 +70,15 @@
   width: 100%;
   margin-bottom: 20px;
 
-  li{
+  &.linksBoxSpace {
+    margin-bottom: 40px;
+  }
+
+  li {
     &:not(:last-child) {
       margin-bottom: 5px;
     }
   }
-}
-
-.linksBoxSpace{
-  margin-bottom: 40px;
 }
 
 .linksTitle {
@@ -71,9 +89,101 @@
   margin-bottom: 24px;
 }
 
+
+
 .linkItem {
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   text-align: left;
 }
+
+.contactBox {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.contactInfo{
+  max-width: 250px;
+  width: 100%;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 30px;
+
+  span {
+    color: var(--color-orange);
+    margin-bottom: 20px;
+  }
+}
+
+.contactContainer{
+  display: flex;
+  gap: 20px;
+}
+
+.mapImg{
+  margin-bottom: 10px;
+}
+.address,
+.phone{
+  margin-bottom: 15px;
+}
+
+.email,
+.address,
+.phone{
+  display: flex;
+  align-items: center;
+}
+
+.icon{
+  margin-right: 20px;
+}
+
+.footerBottom{
+  background: var(--color-white);
+  color: var(--color-dark-grey);
+}
+
+.footerBottomBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 27px;
+}
+
+.footerBottomLeft{
+  display: flex;
+  width: 50%;
+
+  li{
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+  }
+
+  a{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    display: block;
+
+
+  }
+}
+
+.footerBottomRight{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+
+
+}
+

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./FooterForm.module.scss";
+import classNames from "classnames";
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -24,9 +25,6 @@ function ContactForm() {
 
     return (
         <form className={styles.contactForm} onSubmit={handleSubmit}>
-            <h2>
-                Contact <span>us</span>
-            </h2>
             <div className={styles.formGroup}>
                 <input
                     type="text"
@@ -69,7 +67,7 @@ function ContactForm() {
                     I would like to receive the newsletter.
                 </label>
             </div>
-            <button type="submit" className={styles.submitButton}>
+            <button type="submit" className={classNames("main-btn", styles.submitButton)}>
                 Submit
             </button>
         </form>

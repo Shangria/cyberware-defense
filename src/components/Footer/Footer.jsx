@@ -9,6 +9,8 @@ import emailIcon from "../../assets/images/footer/email-icon.svg";
 import phoneIcon from "../../assets/images/footer/phone-icon.svg";
 import map from "../../assets/images/footer/maps.png";
 import classNames from "classnames";
+import React from "react";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -30,66 +32,117 @@ const Footer = () => {
                             <div className={styles.linksWrap}>
                                 <ul className={classNames(styles.linksBox, styles.linksBoxSpace)}>
                                     <li className={styles.linksTitle}>Services</li>
-                                    <li className={styles.linkItem}>SIEM - 24/7 Threat Monitoring</li>
-                                    <li className={styles.linkItem}>Penetration Testing</li>
-                                    <li className={styles.linkItem}>Incident Management</li>
-                                    <li className={styles.linkItem}>Compliance & Risk Management</li>
-                                    <li className={styles.linkItem}>Security Awareness Training</li>
+                                    <li className={styles.linkItem}>
+                                        <Link to={"/"}>SIEM - 24/7 Threat Monitoring</Link></li>
+                                    <li className={styles.linkItem}>
+                                        <Link to={"/"}>Penetration Testing</Link>
+                                    </li>
+                                    <li className={styles.linkItem}>
+                                        <Link to={"/"}>Incident Management</Link>
+                                    </li>
+                                    <li className={styles.linkItem}>
+                                        <Link to={"/"}>Compliance & Risk Management</Link>
+                                    </li>
+                                    <li className={styles.linkItem}>
+                                        <Link to={"/"}>Security Awareness Training</Link>
+                                    </li>
                                 </ul>
-                                <div className={styles.linksContainer}>
-                                    <ul className={styles.linksBox}>
+                                <div>
+                                    <ul className={classNames(styles.linksBox, styles.linksBoxSpace)}>
                                         <li className={styles.linksTitle}>About Us</li>
-                                        <li className={styles.linkItem}>Mission Statement</li>
-                                        <li className={styles.linkItem}>Our Story</li>
-                                        <li className={styles.linkItem}>Our Expertise</li>
-                                        <li className={styles.linkItem}>Partnerships</li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Mission Statement</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Our Story</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Our Expertise</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Partnerships</a>
+                                        </li>
                                     </ul>
                                     <ul className={styles.linksBox}>
-                                        <li className={styles.linksTitle}>Our Values</li>
-                                        <li className={styles.linkItem}>Innovation</li>
-                                        <li className={styles.linkItem}>Trust</li>
-                                        <li className={styles.linkItem}>Excellence</li>
-                                        <li className={styles.linkItem}>Collaboration</li>
+                                        <li className={styles.linksTitle}>
+                                            <a target="_blank" href={""}>Our Values</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Innovation</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Trust</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Excellence</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Collaboration</a>
+
+                                        </li>
                                     </ul>
                                 </div>
 
-                                <div className={styles.linksContainer}>
+                                <div>
                                     <ul className={styles.linksBox}>
                                         <li className={styles.linksTitle}>Team</li>
-                                        <li className={styles.linkItem}>Co-Founder & CXX</li>
-                                        <li className={styles.linkItem}>Cybersecurity Specialists</li>
-                                        <li className={styles.linkItem}>Security Awareness Advisors</li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Co-Founder & CXX</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Cybersecurity Specialists</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Security Awareness Advisors</a>
+                                        </li>
                                     </ul>
                                     <ul className={styles.linksBox}>
-                                        <li className={styles.linksTitle}>Industries We Serve</li>
-                                        <li className={styles.linkItem}>Finance</li>
-                                        <li className={styles.linkItem}>Healthcare</li>
-                                        <li className={styles.linkItem}>Government</li>
-                                        <li className={styles.linkItem}>Retail</li>
-                                        <li className={styles.linkItem}>eGame</li>
-                                        <li className={styles.linkItem}>Education</li>
+                                        <li className={styles.linksTitle}>
+                                            <a target="_blank" href={""}>Industries We Serve</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Finance</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Healthcare</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Government</a>
+                                        </li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Retail</a></li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>eGame</a></li>
+                                        <li className={styles.linkItem}>
+                                            <a target="_blank" href={""}>Education</a></li>
 
                                     </ul>
                                 </div>
                             </div>
                             <div className={styles.contactBox}>
-                                <FooterForm/>
-                                <div className={styles.contactInfo}>
-                                    <img className={styles.mapImg} src={map} alt="map"/>
-                                    <address className={styles.address}>
-                                        <img src={locationIcon} alt="location icon"/>
-                                        <span>Berlin, Germany</span>
-                                    </address>
-                                    <div className={styles.phone}>
-                                        <img src={phoneIcon} alt="phone icon"/>
-                                        <a href="tel:000111222333">000111222333</a>
-                                    </div>
+                                <h3 className={styles.title}>
+                                    Contact <span>us</span>
+                                </h3>
+                                <div className={styles.contactContainer}>
+                                    <FooterForm/>
+                                    <div className={styles.contactInfo}>
+                                        <img className={styles.mapImg} src={map} alt="map"/>
+                                        <address className={styles.address}>
+                                            <img className={styles.icon} src={locationIcon} alt="location icon"/>
+                                            <span>Berlin, Germany</span>
+                                        </address>
+                                        <div className={styles.phone}>
+                                            <img className={styles.icon} src={phoneIcon} alt="phone icon"/>
+                                            <a href="tel:000111222333">000111222333</a>
+                                        </div>
 
-                                    <div className={styles.email}>
-                                        <img src={emailIcon} alt="email icon"/>
-                                        <a href="mailto:info@cybergd.com">info@cybergd.com</a>
+                                        <div className={styles.email}>
+                                            <img className={styles.icon} src={emailIcon} alt="email icon"/>
+                                            <a href="mailto:info@cybergd.com">info@cybergd.com</a>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -97,6 +150,30 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.footerBottom}>
+                    <div className="container">
+                        <div className={styles.footerBottomBox}>
+                            <ul className={styles.footerBottomLeft}>
+                                <li>
+                                    <a target="_blank" href="">
+                                        Legal Notice
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="">Data Protection
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="">
+                                        Terms of Use
+                                    </a>
+                                </li>
+                            </ul>
+                            <p className={styles.footerBottomRight}>
+                                ©Cyberware Global Defense
+                            </p>
+                        </div>
+
+                    </div>
 
                 </div>
 

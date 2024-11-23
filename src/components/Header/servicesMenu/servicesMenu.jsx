@@ -3,6 +3,7 @@ import styles from "./servicesMenu.module.scss";
 import { Link } from "react-router-dom";
 import { servicesMenu } from "../../../data/srvicesMenu";
 import arrow from "../../../assets/images/services/arrow.svg";
+import classNames from "classnames";
 
 const ServicesMenu = ({ setIsServicesOpen }) => {
   const servicesMenuRef = useRef(null);
@@ -51,7 +52,7 @@ const ServicesMenu = ({ setIsServicesOpen }) => {
                   );
                 })}
               </ul>
-              <Link className={styles.linkBox} to={servicesMenuItem.link}>
+              <Link className={classNames("main-btn", styles.linkBox )} to={servicesMenuItem.link}>
                 <span className={styles.explore}>explore</span>
                 <span className={styles.linkText}>
                   {servicesMenuItem.linkText}

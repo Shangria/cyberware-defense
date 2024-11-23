@@ -67,7 +67,6 @@
 }
 
 .linkBox {
-  background: var(--color-orange);
   margin-top: auto;
   display: flex;
   align-items: flex-end;
@@ -78,12 +77,8 @@
   margin-bottom: 10px;
   gap: 3px;
 
-  @media (min-width: 1024px) and (max-width: 1366px) {
+  @media (min-width: 1024px)  {
     padding: 8px 6px;
-  }
-
-  &:hover {
-    background: var(--color-pastel-orange);
   }
 }
 
