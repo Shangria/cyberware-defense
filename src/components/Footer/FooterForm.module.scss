@@ -5,7 +5,7 @@
 .formGroup {
   input, textarea {
     width: 100%;
-    background: var(--color-grey2);
+    background: var(--color-grey-additional);
     border: none;
     border-bottom: 1px solid var(--color-white);
     padding: 5px;
@@ -19,11 +19,5 @@
   }
 }
 
-.submitButton{
-  background: var(--color-orange);
-  width: 100%;
-  max-width: 250px;
-  padding: 14px 5px;
-}
 
 

@@ -1,0 +1,12 @@
+.heroBg {
+  position: relative;
+  width: 100%;
+  min-height: 728px;
+  background-size: cover;
+  background-position: center center;
+  border-bottom: 8px solid var(--color-orange);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 65px;
+}

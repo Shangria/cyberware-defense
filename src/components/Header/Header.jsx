@@ -36,6 +36,7 @@ function Header() {
         </div>
       </div>
       <div className={styles.navbarWrap}>
+        {isServicesOpen && <ServicesMenu setIsServicesOpen={setIsServicesOpen} />}
         <div className="container">
           <nav className={styles.navbar}>
             <ul className={styles.navLinksRight}>
@@ -134,8 +135,6 @@ function Header() {
           </nav>
         </div>
       </div>
-
-      {isServicesOpen && <ServicesMenu setIsServicesOpen={setIsServicesOpen} />}
     </header>
   );
 }

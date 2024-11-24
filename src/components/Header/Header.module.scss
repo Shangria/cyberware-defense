@@ -51,8 +51,9 @@
 }
 
 .navbarWrap {
-  background: var(--color-grey);
+  background: var(--color-grey-main);
   color: var(--color-white);
+  position: relative;
 }
 
 .navbar {
@@ -107,6 +108,13 @@
   display: flex;
   align-items: center;
   padding: 2px 0;
+}
+
+.services{
+  border-bottom: 2px solid transparent;
+  &.activeServices{
+    border-bottom: 2px solid var(--color-orange);
+  }
 }
 
 .linkText {
