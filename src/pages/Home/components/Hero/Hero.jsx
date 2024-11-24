@@ -1,7 +1,7 @@
 import React from 'react';
-import HeroBg from "../HeroBg/HeroBg";
+import HeroBg from "../../../../components/HeroBg/HeroBg";
 import styles from "./Hero.module.scss";
-import freeConsultation from "../../assets/home/free-consultation.svg";
+import freeConsultation from "../../../../assets/home/free-consultation.svg";
 import classNames from "classnames";
 
 const Hero = ({backgroundImage}) => {

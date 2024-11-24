@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./servicesMenu.module.scss";
 import { Link } from "react-router-dom";
-import { servicesMenu } from "../../../data/srvicesMenu";
+import { servicesMenu } from "../../../data/servicesMenu";
 import arrow from "../../../assets/images/services/arrow.svg";
 import classNames from "classnames";
 
