@@ -1,0 +1,44 @@
+.whoWeAreWrap {
+  background: var(--color-grey-main);
+  padding: 72px 0 106px;
+  color: var(--color-white);
+}
+
+.whoWeAreItemsBox{
+  display: flex;
+  flex-wrap: wrap;
+  gap:32px;
+  justify-content: center;
+}
+
+.text{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  max-width: 1072px;
+  margin: 0 auto 48px;
+}
+
+.whoWeAreItem{
+  border: 3px solid var(--color-orange);
+  max-width: 336px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+
+  img{
+    margin-right: 24px;
+  }
+
+  p{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+
+    span{
+      color: var(--color-orange);
+    }
+  }
+}

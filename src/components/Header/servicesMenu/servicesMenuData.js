@@ -1,10 +1,10 @@
-import servicesImg1 from "../assets/images/services/1.svg";
-import servicesImg2 from "../assets/images/services/2.svg";
-import servicesImg3 from "../assets/images/services/3.svg";
-import servicesImg4 from "../assets/images/services/4.svg";
-import servicesImg5 from "../assets/images/services/5.svg";
+import servicesImg1 from "../../../assets/images/services/1.svg";
+import servicesImg2 from "../../../assets/images/services/2.svg";
+import servicesImg3 from "../../../assets/images/services/3.svg";
+import servicesImg4 from "../../../assets/images/services/4.svg";
+import servicesImg5 from "../../../assets/images/services/5.svg";
 
-export const servicesMenu = [
+export const servicesMenuData = [
   {
     img: servicesImg1,
     title: "SIEM Threat Detection & Response",

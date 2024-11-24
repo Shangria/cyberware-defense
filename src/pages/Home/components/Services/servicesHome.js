@@ -1,9 +1,9 @@
-import service1 from "../assets/images/services/gray1.svg"
-import service2 from "../assets/images/services/gray2.svg"
-import service3 from "../assets/images/services/gray3.svg"
-import service4 from "../assets/images/services/gray4.svg"
-import service5 from "../assets/images/services/gray5.svg"
-import service6 from "../assets/images/services/gray6.svg"
+import service1 from "../../../../assets/images/services/gray1.svg"
+import service2 from "../../../../assets/images/services/gray2.svg"
+import service3 from "../../../../assets/images/services/gray3.svg"
+import service4 from "../../../../assets/images/services/gray4.svg"
+import service5 from "../../../../assets/images/services/gray5.svg"
+import service6 from "../../../../assets/images/services/gray6.svg"
 
 export const servicesHomeData=[
     {

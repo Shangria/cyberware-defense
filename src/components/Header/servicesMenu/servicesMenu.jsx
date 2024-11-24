@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./servicesMenu.module.scss";
 import { Link } from "react-router-dom";
-import { servicesMenu } from "../../../data/servicesMenu";
+import { servicesMenuData } from "./servicesMenuData";
 import arrow from "../../../assets/images/services/arrow.svg";
 import classNames from "classnames";
 
@@ -31,7 +31,7 @@ const ServicesMenu = ({ setIsServicesOpen }) => {
   return (
     <div className={styles.servicesMenu} ref={servicesMenuRef}>
       <div className={styles.servicesBox}>
-        {servicesMenu.map((servicesMenuItem, index) => {
+        {servicesMenuData.map((servicesMenuItem, index) => {
           return (
             <div key={index} className={styles.serviceCard}>
               <img

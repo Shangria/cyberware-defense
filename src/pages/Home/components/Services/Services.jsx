@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./Services.module.scss"
-import {servicesHomeData} from "../../../../data/servicesHome";
+import {servicesHomeData} from "./servicesHome";
 
 const Services = () => {
     return (
@@ -17,9 +17,7 @@ const Services = () => {
                                     <p>{item.text}</p>
                                     <a className={"main-btn"} href={item.link}>{item.btn}</a>
                                 </div>
-
-                            )
-                        })
+                            )})
                     }
                 </div>
             </div>

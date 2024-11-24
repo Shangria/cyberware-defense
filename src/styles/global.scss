@@ -48,7 +48,7 @@ main {
 h1 {
   font-size: clamp(50px, 6vw, 100px);
   font-weight: 400;
-  line-height: 100px;
+  line-height: clamp(50px, 6vw, 100px);
   text-align: center;
   color: var(--color-white);
   letter-spacing: -0.03em;
